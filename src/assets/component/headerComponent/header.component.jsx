@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { contentfulClient } from '../utils/contentfulClient';
+import { contentfulClient } from '../../utils/contentfulClient';
 
 export const HeaderComponent = () => {
     const [entry, setEntry] = useState(null);
@@ -8,7 +8,6 @@ export const HeaderComponent = () => {
         contentfulClient.getEntry('5gu8ensQStuwrxVVAmPdsh')
             .then((entry) => {
                 setEntry(entry);
-                console.log(entry);
                 
             })
             .catch((error) => {

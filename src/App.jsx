@@ -1,4 +1,5 @@
 import { HeaderComponent } from "./assets/component/headerComponent/header.component"
+import { GalleryComponent } from "./assets/component/gallery/gallery.component"
 
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
   return (
     <>
       <HeaderComponent />
+      <GalleryComponent />
     </>
   )
 }
